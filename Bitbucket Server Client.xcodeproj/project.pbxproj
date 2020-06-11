@@ -24,6 +24,7 @@
 		6775EAD32491A96400DEC9F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6775EAD62491A96400DEC9F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6775EAD82491A96400DEC9F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6775EADE2491ABB600DEC9F5 /* Bitbucket Server Client.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bitbucket Server Client.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 		6775EAC92491A96100DEC9F5 /* Bitbucket Server Client */ = {
 			isa = PBXGroup;
 			children = (
+				6775EADE2491ABB600DEC9F5 /* Bitbucket Server Client.entitlements */,
 				6775EACA2491A96100DEC9F5 /* AppDelegate.swift */,
 				6775EACC2491A96100DEC9F5 /* SceneDelegate.swift */,
 				6775EACE2491A96100DEC9F5 /* ContentView.swift */,
@@ -284,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Bitbucket Server Client/Bitbucket Server Client.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Bitbucket Server Client/Preview Content\"";
 				DEVELOPMENT_TEAM = N6ESLEE34B;
@@ -295,6 +298,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "electricbluefish.Bitbucket-Server-Client";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,6 +308,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Bitbucket Server Client/Bitbucket Server Client.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Bitbucket Server Client/Preview Content\"";
 				DEVELOPMENT_TEAM = N6ESLEE34B;
@@ -315,6 +320,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "electricbluefish.Bitbucket-Server-Client";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
