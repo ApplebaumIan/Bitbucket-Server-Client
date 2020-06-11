@@ -25,12 +25,20 @@ struct PullRequestRow: View {
 	}
 }
 struct PullRequestList: View {
-    var body: some View {
+    @State private var filterBy = 0
+	var body: some View {
 		
-		List {
-			PullRequestRow()
-		}.listStyle(GroupedListStyle())
-			.navigationBarTitle("Pull Requests")
+		VStack {
+			Picker(selection: $filterBy, label: Text("What is your favorite color?")) {
+						   Text("Created").tag(0)
+						   Text("Mentioned").tag(1)
+						   Text("Requested").tag(2)
+					   }.pickerStyle(SegmentedPickerStyle())
+			List {
+				PullRequestRow()
+			}.listStyle(GroupedListStyle())
+				.navigationBarTitle("Pull Requests")
+		}
 		}
     
 }
