@@ -28,9 +28,9 @@ struct ContentView_Previews: PreviewProvider {
 		}
     }
 }
-struct PullRequestRow: View {
+struct PullRequestHomeMenuRow: View {
     var body: some View {
-         NavigationLink(destination: Text("Second View")) {
+         NavigationLink(destination: PullRequestList()) {
 			HStack {
 				Image(systemName: "arrow.merge").background(Color.blue.frame(width: 30, height: 30).clipShape(RoundedRectangle(cornerRadius: 5)))
 					.foregroundColor(.white)
@@ -122,7 +122,7 @@ struct Home: View {
 struct WorkSection: View {
 	var body: some View {
 		Section(header: Text("My Work").font(.headline)) {
-			PullRequestRow()
+			PullRequestHomeMenuRow()
 			RepoRow()
 			ProjectsRow()
 			

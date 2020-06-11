@@ -15,19 +15,9 @@ struct ActivityRow: View {
 					ProjectInfo() // Project Title
 					ActivityTitle()
 					MessagePreview()
+						.padding(.bottom)
 				}
-				ZStack{
-					RoundedRectangle(cornerRadius: 5)
-						.frame(width: 31.0, height: 31.0)
-						.foregroundColor(.black)
-					RoundedRectangle(cornerRadius: 5)
-						.frame(width: 30.0, height: 30.0)
-						.foregroundColor(.pink)
-					
-					Text("2").font(.footnote)
-						.fontWeight(.black)
-						.foregroundColor(.white)
-				}
+				ActivityInfoNumbers()
 				
 					
 					
@@ -39,14 +29,17 @@ struct Notifications: View {
 	var body: some View {
 		NavigationView {
 			List {
-				ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-					ActivityRow()
-				}
-			}.listStyle(GroupedListStyle())
+				
+				ActivityRow()
+				
+			}
+			.listStyle(GroupedListStyle())
 				.navigationBarTitle("Activity")
-//			.navigationBarItems(leading:
-//				ProfileButton()
-//			)
+			.navigationBarItems(trailing:
+				Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+				Image(systemName: "line.horizontal.3.decrease.circle")
+				}
+			)
 		}
 			.tabItem {
 				VStack {
@@ -67,10 +60,9 @@ struct Notifications_Previews: PreviewProvider {
 struct ActivityTitle: View {
 	var body: some View {
 		HStack {
-			Image(systemName: "arrow.merge").background(Color.blue.frame(width: 30, height: 30).clipShape(RoundedRectangle(cornerRadius: 5)))
-				.foregroundColor(.white)
-			Spacer()
-				.frame(width: 14.0)
+			ActivityTypeIcon()
+//			Spacer()
+//				.frame(width: 14.0)
 			Text("PULL REQUEST TITLE")
 				.lineLimit(1)
 			Spacer()
@@ -102,10 +94,45 @@ struct ProjectInfo: View {
 		HStack {
 			Text("ApplebaumIan/epotek-product-visualizer").font(.caption).foregroundColor(Color.gray).lineLimit(1)
 			Text("#2").font(.caption)
-			Spacer()
+			
+		}
+	}
+}
+
+struct ActivityTypeIcon: View {
+	var body: some View {
+		ZStack{
+			RoundedRectangle(cornerRadius: 5).frame(width: 30, height: 30)
+				.foregroundColor(.blue)
+			Image(systemName: "arrow.merge")
+				.foregroundColor(.white)
+		}
+//			.background(Color.blue.frame(width: 30, height: 30).clipShape(RoundedRectangle(cornerRadius: 5)))
+//			.foregroundColor(.white)
+	}
+}
+
+struct ActivityInfoNumbers: View {
+	var body: some View {
+		VStack {
 			Text("2d")
 				.font(.footnote)
 				.fontWeight(.thin)
+			Spacer()
+			ZStack{
+				RoundedRectangle(cornerRadius: 5)
+					.frame(width: 31.0, height: 31.0)
+					.foregroundColor(.black)
+				RoundedRectangle(cornerRadius: 5)
+					.frame(width: 30.0, height: 30.0)
+					.foregroundColor(.pink)
+				
+				Text("2").font(.footnote)
+					.fontWeight(.black)
+					.foregroundColor(.white)
+			}
+			Spacer()
+			Text("")//Cheap trick for spacing...
 		}
 	}
 }
