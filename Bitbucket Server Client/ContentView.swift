@@ -12,10 +12,15 @@ struct ContentView: View {
     @State private var selection = 0
  
     var body: some View {
-		TabView(selection: $selection){
-			Home()
-			Notifications()
-			Search()
+//		TabView(selection: $selection){
+//			Home()
+//			Notifications()
+//			Search()
+//		}.accentColor(.yellow)
+		UIKitTabView{
+			Home().tab(title: "Home",image: "house",selectedImage:"house.fill" )
+			Notifications().tab(title: "Notifications",image: "bell",selectedImage: "bell.fill")
+			Search().tab(title: "Search",image: "magnifyingglass")
 		}.accentColor(.yellow)
     }
 }
