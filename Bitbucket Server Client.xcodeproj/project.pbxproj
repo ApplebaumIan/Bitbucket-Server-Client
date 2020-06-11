@@ -17,6 +17,8 @@
 		6775EAE22491DCCD00DEC9F5 /* PullRequestList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6775EAE12491DCCD00DEC9F5 /* PullRequestList.swift */; };
 		6775EAE42491E5EF00DEC9F5 /* UIKitTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6775EAE32491E5EF00DEC9F5 /* UIKitTab.swift */; };
 		67E0B12924928A7A0052044B /* SearchUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E0B12824928A7A0052044B /* SearchUI.swift */; };
+		67E0B12B249294CE0052044B /* RepositoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E0B12A249294CE0052044B /* RepositoryList.swift */; };
+		67E0B12D24929B7A0052044B /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E0B12C24929B7A0052044B /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		6775EAE12491DCCD00DEC9F5 /* PullRequestList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestList.swift; sourceTree = "<group>"; };
 		6775EAE32491E5EF00DEC9F5 /* UIKitTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTab.swift; sourceTree = "<group>"; };
 		67E0B12824928A7A0052044B /* SearchUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUI.swift; sourceTree = "<group>"; };
+		67E0B12A249294CE0052044B /* RepositoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryList.swift; sourceTree = "<group>"; };
+		67E0B12C24929B7A0052044B /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +75,10 @@
 				6775EACC2491A96100DEC9F5 /* SceneDelegate.swift */,
 				6775EACE2491A96100DEC9F5 /* ContentView.swift */,
 				6775EAE12491DCCD00DEC9F5 /* PullRequestList.swift */,
+				67E0B12A249294CE0052044B /* RepositoryList.swift */,
 				6775EADF2491CA5A00DEC9F5 /* Notifications.swift */,
 				6775EAE32491E5EF00DEC9F5 /* UIKitTab.swift */,
+				67E0B12C24929B7A0052044B /* Repository.swift */,
 				6775EAD02491A96400DEC9F5 /* Assets.xcassets */,
 				6775EAD52491A96400DEC9F5 /* LaunchScreen.storyboard */,
 				6775EAD82491A96400DEC9F5 /* Info.plist */,
@@ -163,10 +169,12 @@
 				6775EAE02491CA5A00DEC9F5 /* Notifications.swift in Sources */,
 				6775EAE22491DCCD00DEC9F5 /* PullRequestList.swift in Sources */,
 				6775EACB2491A96100DEC9F5 /* AppDelegate.swift in Sources */,
+				67E0B12B249294CE0052044B /* RepositoryList.swift in Sources */,
 				67E0B12924928A7A0052044B /* SearchUI.swift in Sources */,
 				6775EACD2491A96100DEC9F5 /* SceneDelegate.swift in Sources */,
 				6775EAE42491E5EF00DEC9F5 /* UIKitTab.swift in Sources */,
 				6775EACF2491A96100DEC9F5 /* ContentView.swift in Sources */,
+				67E0B12D24929B7A0052044B /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

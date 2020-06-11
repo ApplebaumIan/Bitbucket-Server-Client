@@ -44,7 +44,7 @@ struct PullRequestHomeMenuRow: View {
 }
 struct RepoRow: View {
     var body: some View {
-         NavigationLink(destination: Text("Second View")) {
+         NavigationLink(destination: RepositoryList()) {
 			HStack {
 				Image(systemName: "cube.box").background(Color.purple.frame(width: 30, height: 30).clipShape(RoundedRectangle(cornerRadius: 5)))
 					.foregroundColor(.white)
@@ -87,7 +87,7 @@ struct RepoFavRow: View {
 				
 				Spacer()
 					.frame(width: 14.0)
-				name
+				name.lineLimit(1)
 
 			}
 			.padding(.leading,-1)
