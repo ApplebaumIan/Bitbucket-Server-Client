@@ -45,6 +45,7 @@ struct Markdown : UIViewRepresentable {
         let dummy_html = html
         let htmlString = "\(htmlStart)\(dummy_html)\(htmlEnd)"
         webview.loadHTMLString(htmlString, baseURL:  nil)
+		webview.scrollView.isScrollEnabled = false
         return webview
     }
 

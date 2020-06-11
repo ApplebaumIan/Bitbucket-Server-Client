@@ -328,6 +328,7 @@
 				DEVELOPMENT_TEAM = N6ESLEE34B;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Bitbucket Server Client/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -350,6 +351,7 @@
 				DEVELOPMENT_TEAM = N6ESLEE34B;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Bitbucket Server Client/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
