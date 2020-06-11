@@ -15,8 +15,11 @@ struct Repository: View {
 			ProjectDetails()
 			ProjectPullRequestNav()
 			Section(header: BranchIndicator()) {
-			Text("Code")
-				Text("Commits")
+			
+				Text("Code")
+				NavigationLink(destination: CommitsView()) {
+					Text("Commits")
+				}
 			}
 			Section{
 				Markdown(dynamicHeight: $markdownViewHeight,markdownText: """
