@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6733A1A52492D45300C16573 /* Ink in Frameworks */ = {isa = PBXBuildFile; productRef = 6733A1A42492D45300C16573 /* Ink */; };
+		676F29B02492D98E006D1E2F /* MarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676F29AF2492D98E006D1E2F /* MarkdownView.swift */; };
 		6775EACB2491A96100DEC9F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6775EACA2491A96100DEC9F5 /* AppDelegate.swift */; };
 		6775EACD2491A96100DEC9F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6775EACC2491A96100DEC9F5 /* SceneDelegate.swift */; };
 		6775EACF2491A96100DEC9F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6775EACE2491A96100DEC9F5 /* ContentView.swift */; };
@@ -22,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		676F29AF2492D98E006D1E2F /* MarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownView.swift; sourceTree = "<group>"; };
 		6775EAC72491A96100DEC9F5 /* Bitbucket Server Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bitbucket Server Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6775EACA2491A96100DEC9F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6775EACC2491A96100DEC9F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6733A1A52492D45300C16573 /* Ink in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +83,7 @@
 				6775EADF2491CA5A00DEC9F5 /* Notifications.swift */,
 				6775EAE32491E5EF00DEC9F5 /* UIKitTab.swift */,
 				67E0B12C24929B7A0052044B /* Repository.swift */,
+				676F29AF2492D98E006D1E2F /* MarkdownView.swift */,
 				6775EAD02491A96400DEC9F5 /* Assets.xcassets */,
 				6775EAD52491A96400DEC9F5 /* LaunchScreen.storyboard */,
 				6775EAD82491A96400DEC9F5 /* Info.plist */,
@@ -111,6 +116,9 @@
 			dependencies = (
 			);
 			name = "Bitbucket Server Client";
+			packageProductDependencies = (
+				6733A1A42492D45300C16573 /* Ink */,
+			);
 			productName = "Bitbucket Server Client";
 			productReference = 6775EAC72491A96100DEC9F5 /* Bitbucket Server Client.app */;
 			productType = "com.apple.product-type.application";
@@ -139,6 +147,9 @@
 				Base,
 			);
 			mainGroup = 6775EABE2491A96100DEC9F5;
+			packageReferences = (
+				6733A1A32492D45300C16573 /* XCRemoteSwiftPackageReference "ink" */,
+			);
 			productRefGroup = 6775EAC82491A96100DEC9F5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -169,6 +180,7 @@
 				6775EAE02491CA5A00DEC9F5 /* Notifications.swift in Sources */,
 				6775EAE22491DCCD00DEC9F5 /* PullRequestList.swift in Sources */,
 				6775EACB2491A96100DEC9F5 /* AppDelegate.swift in Sources */,
+				676F29B02492D98E006D1E2F /* MarkdownView.swift in Sources */,
 				67E0B12B249294CE0052044B /* RepositoryList.swift in Sources */,
 				67E0B12924928A7A0052044B /* SearchUI.swift in Sources */,
 				6775EACD2491A96100DEC9F5 /* SceneDelegate.swift in Sources */,
@@ -372,6 +384,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6733A1A32492D45300C16573 /* XCRemoteSwiftPackageReference "ink" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnsundell/ink.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6733A1A42492D45300C16573 /* Ink */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6733A1A32492D45300C16573 /* XCRemoteSwiftPackageReference "ink" */;
+			productName = Ink;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6775EABF2491A96100DEC9F5 /* Project object */;
 }
