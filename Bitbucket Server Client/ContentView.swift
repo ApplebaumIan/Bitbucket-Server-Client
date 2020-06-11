@@ -77,7 +77,7 @@ struct RepoFavRow: View {
 	var repoImage: Image?
 	var name: Text
     var body: some View {
-         NavigationLink(destination: Text("Second View")) {
+         NavigationLink(destination: Repository()) {
 			HStack {
 				repoImage?.resizable()
 					.aspectRatio(contentMode: .fit)
