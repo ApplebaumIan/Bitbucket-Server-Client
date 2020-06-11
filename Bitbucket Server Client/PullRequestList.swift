@@ -10,11 +10,12 @@ import SwiftUI
 
 struct PullRequestRow: View {
 	@State var buildStatus: BuildStatus? = .processing
+	var title: String?
 	var body: some View{
 		HStack {
 			VStack {
 				ProjectInfo()
-				ActivityTitle()
+				ActivityTitle(title: title)
 				MessagePreview()
 					.padding(.bottom)
 				
@@ -27,18 +28,7 @@ struct PullRequestRow: View {
 struct PullRequestList: View {
     @State private var filterBy = 0
 	var body: some View {
-		
-		VStack {
-			Picker(selection: $filterBy, label: Text("What is your favorite color?")) {
-						   Text("Created").tag(0)
-						   Text("Mentioned").tag(1)
-						   Text("Requested").tag(2)
-					   }.pickerStyle(SegmentedPickerStyle())
-			List {
-				PullRequestRow()
-			}.listStyle(GroupedListStyle())
-				.navigationBarTitle("Pull Requests")
-		}
+		SearchUI(array: ["Peter", "Paul", "Mary", "Anna-Lena", "George", "John", "Greg", "Thomas", "Robert", "Bernie", "Mike", "Benno", "Hugo", "Miles", "Michael", "Mikel", "Tim", "Tom", "Lottie", "Lorrie", "Barbara"], filters: ["Created","Mentioned","Requested"]).navigationBarTitle("Pull Requests")
 		}
     
 }

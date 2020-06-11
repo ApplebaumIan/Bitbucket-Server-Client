@@ -16,6 +16,7 @@
 		6775EAE02491CA5A00DEC9F5 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6775EADF2491CA5A00DEC9F5 /* Notifications.swift */; };
 		6775EAE22491DCCD00DEC9F5 /* PullRequestList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6775EAE12491DCCD00DEC9F5 /* PullRequestList.swift */; };
 		6775EAE42491E5EF00DEC9F5 /* UIKitTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6775EAE32491E5EF00DEC9F5 /* UIKitTab.swift */; };
+		67E0B12924928A7A0052044B /* SearchUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E0B12824928A7A0052044B /* SearchUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		6775EADF2491CA5A00DEC9F5 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		6775EAE12491DCCD00DEC9F5 /* PullRequestList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestList.swift; sourceTree = "<group>"; };
 		6775EAE32491E5EF00DEC9F5 /* UIKitTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTab.swift; sourceTree = "<group>"; };
+		67E0B12824928A7A0052044B /* SearchUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			children = (
 				6775EADE2491ABB600DEC9F5 /* Bitbucket Server Client.entitlements */,
 				6775EACA2491A96100DEC9F5 /* AppDelegate.swift */,
+				67E0B12824928A7A0052044B /* SearchUI.swift */,
 				6775EACC2491A96100DEC9F5 /* SceneDelegate.swift */,
 				6775EACE2491A96100DEC9F5 /* ContentView.swift */,
 				6775EAE12491DCCD00DEC9F5 /* PullRequestList.swift */,
@@ -160,6 +163,7 @@
 				6775EAE02491CA5A00DEC9F5 /* Notifications.swift in Sources */,
 				6775EAE22491DCCD00DEC9F5 /* PullRequestList.swift in Sources */,
 				6775EACB2491A96100DEC9F5 /* AppDelegate.swift in Sources */,
+				67E0B12924928A7A0052044B /* SearchUI.swift in Sources */,
 				6775EACD2491A96100DEC9F5 /* SceneDelegate.swift in Sources */,
 				6775EAE42491E5EF00DEC9F5 /* UIKitTab.swift in Sources */,
 				6775EACF2491A96100DEC9F5 /* ContentView.swift in Sources */,

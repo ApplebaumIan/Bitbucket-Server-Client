@@ -58,13 +58,18 @@ struct Notifications_Previews: PreviewProvider {
 }
 
 struct ActivityTitle: View {
+	var title: String?
 	var body: some View {
 		HStack {
 			ActivityTypeIcon()
 //			Spacer()
 //				.frame(width: 14.0)
-			Text("PULL REQUEST TITLE")
-				.lineLimit(1)
+			if title != nil {
+				Text("\(title!)")
+					.lineLimit(1)
+			} else {
+				Text("")
+			}
 			Spacer()
 		}
 		.padding(.leading,-1)
