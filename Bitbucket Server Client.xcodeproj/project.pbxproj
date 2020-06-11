@@ -13,6 +13,7 @@
 		6775EAD12491A96400DEC9F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6775EAD02491A96400DEC9F5 /* Assets.xcassets */; };
 		6775EAD42491A96400DEC9F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6775EAD32491A96400DEC9F5 /* Preview Assets.xcassets */; };
 		6775EAD72491A96400DEC9F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6775EAD52491A96400DEC9F5 /* LaunchScreen.storyboard */; };
+		6775EAE02491CA5A00DEC9F5 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6775EADF2491CA5A00DEC9F5 /* Notifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		6775EAD62491A96400DEC9F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6775EAD82491A96400DEC9F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6775EADE2491ABB600DEC9F5 /* Bitbucket Server Client.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bitbucket Server Client.entitlements"; sourceTree = "<group>"; };
+		6775EADF2491CA5A00DEC9F5 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				6775EACA2491A96100DEC9F5 /* AppDelegate.swift */,
 				6775EACC2491A96100DEC9F5 /* SceneDelegate.swift */,
 				6775EACE2491A96100DEC9F5 /* ContentView.swift */,
+				6775EADF2491CA5A00DEC9F5 /* Notifications.swift */,
 				6775EAD02491A96400DEC9F5 /* Assets.xcassets */,
 				6775EAD52491A96400DEC9F5 /* LaunchScreen.storyboard */,
 				6775EAD82491A96400DEC9F5 /* Info.plist */,
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6775EAE02491CA5A00DEC9F5 /* Notifications.swift in Sources */,
 				6775EACB2491A96100DEC9F5 /* AppDelegate.swift in Sources */,
 				6775EACD2491A96100DEC9F5 /* SceneDelegate.swift in Sources */,
 				6775EACF2491A96100DEC9F5 /* ContentView.swift in Sources */,

@@ -15,6 +15,7 @@ struct ContentView: View {
 		TabView(selection: $selection){
 			Home()
 			Notifications()
+			Search()
 		}.accentColor(.yellow)
     }
 }
@@ -116,19 +117,7 @@ struct Home: View {
 	}
 }
 
-struct Notifications: View {
-	var body: some View {
-		Text("Notifications")
-			.font(.title)
-			.tabItem {
-				VStack {
-					Image(systemName: "bell.fill")
-					Text("Notifications")
-				}
-		}
-		.tag(1)
-	}
-}
+
 
 struct WorkSection: View {
 	var body: some View {
@@ -173,8 +162,19 @@ struct ProfileButton: View {
 					.clipShape(Circle())
 				
 			}
-			//							.padding()
 			
 		}
+	}
+}
+
+struct Search: View {
+	var body: some View {
+		Text("Search").tabItem {
+			VStack {
+				Image(systemName: "magnifyingglass")
+				Text("Search")
+			}
+		}
+		.tag(3)
 	}
 }
