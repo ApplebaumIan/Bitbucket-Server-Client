@@ -8,15 +8,14 @@
 
 import SwiftUI
 var profile: Image? = Image("avatar")
-
 struct ContentView: View {
     @State private var selection = 0
  
     var body: some View {
-        TabView(selection: $selection){
+		TabView(selection: $selection){
 			Home()
 			Notifications()
-        }
+		}.accentColor(.yellow)
     }
 }
 
@@ -99,36 +98,12 @@ struct Home: View {
 	var body: some View {
 		NavigationView {
 			List {
-				Section(header: Text("My Work").font(.headline)) {
-					PullRequestRow()
-					RepoRow()
-					ProjectsRow()
-					
-				}
-				Section(header: Text("Favorites").font(.headline)) {
-					ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-						RepoFavRow(repoImage:Image("avatar"), name: Text("ApplebaumIan/epotek-product-visualizer"))
-					}
-				}
+				WorkSection()
+				FavoritesSection()
 			}.listStyle(GroupedListStyle())
 				.navigationBarTitle("Home")
 			.navigationBarItems(leading:
-				Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-					if profile == nil {
-						Image(systemName: "person.crop.circle")
-							.imageScale(.large)
-					} else {
-						Image("avatar")
-						.resizable()
-							.renderingMode(.original)
-						.imageScale(.small)
-							.frame(width: 30.0, height: 30.0)
-						.clipShape(Circle())
-						
-					}
-//							.padding()
-					
-				}
+				ProfileButton()
 			)
 		}
 			.tabItem {
@@ -152,5 +127,54 @@ struct Notifications: View {
 				}
 		}
 		.tag(1)
+	}
+}
+
+struct WorkSection: View {
+	var body: some View {
+		Section(header: Text("My Work").font(.headline)) {
+			PullRequestRow()
+			RepoRow()
+			ProjectsRow()
+			
+		}
+	}
+}
+
+struct FavoritesSection: View {
+	var body: some View {
+		Section(header: HStack {
+			Text("Favorites").font(.headline)
+			Spacer()
+			Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+				Text("Edit")
+			}
+
+		}) {
+			ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
+				RepoFavRow(repoImage:Image("avatar"), name: Text("ApplebaumIan/epotek-product-visualizer"))
+			}
+		}
+	}
+}
+
+struct ProfileButton: View {
+	var body: some View {
+		Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+			if profile == nil {
+				Image(systemName: "person.crop.circle")
+					.imageScale(.large)
+			} else {
+				Image("avatar")
+					.resizable()
+					.renderingMode(.original)
+					.imageScale(.small)
+					.frame(width: 30.0, height: 30.0)
+					.clipShape(Circle())
+				
+			}
+			//							.padding()
+			
+		}
 	}
 }
