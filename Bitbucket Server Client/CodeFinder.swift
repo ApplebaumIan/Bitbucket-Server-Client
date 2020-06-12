@@ -19,6 +19,9 @@ struct CodeFinder: View {
 				FolderRow()
 			}
 		}.navigationBarTitle("Code", displayMode: .inline)
+		.navigationBarItems(trailing: Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+		Image(systemName: "ellipsis")
+		})
     }
 }
 
