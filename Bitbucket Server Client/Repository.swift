@@ -15,8 +15,9 @@ struct Repository: View {
 			ProjectDetails()
 			ProjectPullRequestNav()
 			Section(header: BranchIndicator()) {
-			
+			NavigationLink(destination: CodeFinder()) {
 				Text("Code")
+				}
 				NavigationLink(destination: CommitsView()) {
 					Text("Commits")
 				}
